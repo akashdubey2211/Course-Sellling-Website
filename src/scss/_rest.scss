@@ -1,0 +1,30 @@
+@import './variables';
+*,
+*::before,
+*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing:inherit;
+    overflow-x: hidden;
+}
+html{
+    font-size: 62.5%;
+    @include lg{
+        font-size: 58%;
+    }
+    @include sm{
+        font-size: 53%;
+    }
+    @include md{
+        font-size: 55%;
+    }
+}
+body{
+    box-sizing: border-box;
+        font-family: 'Open Sans', sans-serif;
+}
+.page-container{
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vw-23rem);
+}

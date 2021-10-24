@@ -1,0 +1,51 @@
+$color-white:#ffffff;
+$color-grey-lm: #d3d3d3;
+$color-black:#000000;
+$color-transparent:#ffffff00; 
+$color-grey-black:#f7f7f7;
+
+$color-slate-dark:#29303b;
+$color-blue-light:#150e56;
+$color-pink-dark:#e9327c;
+
+$color-youtube: #ff0000;
+$color-facebook: #4267b2;
+$color-linkedin: #0072b1;
+$color-devto: #000000;
+$color-twitter: #00acee;
+$color-instagram: #8a3ab9;
+
+// Full page size
+$full-height: calc(100vh - 23rem);
+
+// Media Query Break Points
+
+$screen-tn-max: 450px;
+$screen-sm-max: 596px;
+$screen-md-max: 768px;
+$screen-lg-max: 992px;
+$screen-full-max: 1580px;
+$screen-xl-max: 2800px;
+
+//
+@mixin sm {
+    @media (max-width: #{$screen-sm-max}) {
+      @content;
+    }
+  }
+  @mixin tn {
+    @media (max-width: #{$screen-tn-max}) {
+      @content;
+    }
+  }
+  @mixin md {
+    @media (max-width: #{$screen-md-max}) {
+      @content;
+    }
+  }
+  
+  @mixin lg {
+    @media (max-width: #{$screen-lg-max}) {
+      @content;
+    }
+  }

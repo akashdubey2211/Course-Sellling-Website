@@ -1,0 +1,65 @@
+*,
+*::before,
+*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing:inherit;
+    overflow-x: hidden;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    box-sizing: border-box;
+        font-family: 'Open Sans', sans-serif;
+}
+
+.cta-top{
+    position: relative;
+    display: flex;
+    margin-top: 4rem;
+    justify-content: center;
+    align-items: center;
+}
+.cta-top__img{
+    display: flex;
+    padding: 3rem;
+    width: 85%;
+    height: 34rem;
+    background-image: linear-gradient(to left, #ffffff00 15%,#29303b 40%),url('../images/work.jpg');
+    background-size: cover;
+}
+.cta-top_textbox{
+    position: absolute;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    width: 45%;
+    left: 10%;
+    color: #f7f7f7;
+    align-items: center;
+    height: 30rem;
+}
+.cta-top_textbox_headline{
+    font-size: 3.5rem;
+}
+.cta-top_textbox_story{
+    font-size: 1.6rem;
+}
+.cta-top_textbox-btn{
+    height: 3.5rem;
+    width: 36rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    background-color: #1dace3;
+    color: #f7f7f7;
+    border: none;
+    border-radius: 10rem;
+    outline: none;
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+    transition: all 0.4s;
+}
+.cta-top_textbox-btn:hover{
+    background-color: #f7f7f7;
+    color: #1dace3; 
+}

@@ -1,0 +1,75 @@
+@import './variables';
+.cta-top{
+    position: relative;
+    display: flex;
+    margin-top: 4rem;
+    justify-content: center;
+    align-items: center;
+
+    &__img{
+        display: flex;
+        padding: 3rem;
+        width: 85%;
+        height: 34rem;
+        background-image: linear-gradient(to left, $color-transparent 15%,#150e56 40%),url('../images/work.jpg');
+        background-size: cover;
+        @include md{
+            width: 100%;
+            background-image: linear-gradient(to left, $color-transparent 15%,$color-slate-dark 30%),url('../images/work.jpg');
+        }
+        @include sm{
+            background-image: url('../images/work.jpg');
+        }
+    }
+
+
+&_textbox{
+    position: absolute;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    width: 45%;
+    left: 10%;
+    color: $color-grey-black;
+    align-items: center;
+    height: 30rem;
+
+    @include md{
+        width: 60%;
+        left: 3rem;
+        height: 34rem;
+    }
+    @include sm{
+        width: 100%;
+       left: 0;
+       padding: 3rem;
+       background-color: rgba($color-slate-dark, 0.9);
+    }
+
+&_headline{
+    font-size: 3.5rem;
+}
+&_story{
+    font-size: 1.6rem;
+}
+&_btn{
+    height: 3.5rem;
+    width: 36rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    background-color:#f8ede3;
+    color: $color-blue-light;
+    border: none;
+    border-radius: 10rem;
+    outline: none;
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+    transition: all 0.4s;
+
+&:hover{
+    background-color: $color-blue-light;
+    color: $color-grey-black; 
+    border: 1px solid $color-grey-black;
+}
+}
+}
+}
